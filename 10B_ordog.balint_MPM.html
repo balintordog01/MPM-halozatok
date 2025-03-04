@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hálótervezés - MPM</title>
+    <style>
+        body{
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color: aliceblue;
+        }
+        .a5-box {
+            width: 560px;
+            height: 793px;
+            border: 1px solid #000;
+            background-color: #fff;
+            box-shadow: 5 5 15px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            padding: 20px;
+            box-sizing: border-box;
+            position: relative;
+        }
+        .fejlec {
+            text-align: left;
+            margin-bottom: 10px;
+        }
+        .unselectable {
+            user-select: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+        }
+        footer {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            user-select: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+        }
+        h1, {
+            text-align: center;
+            font-size: 24px;
+            margin: 10px 0;
+            text-decoration: underline;
+        }
+        .main {
+            margin-top: 20px;
+        }
+        .main ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        .main ul li {
+            margin-bottom: 10px;
+        }
+        b{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="a5-box unselectable">
+        <div class="fejlec">
+            <p>Ördög Bálint</p>
+            <p>IKT. projektmunka</p>
+            <p> Debreceni SZC Mechwart András Gépipari és Informatikai Technikum</p>
+        </div>
+        <h1>Hálótervezés - MPM</h1>
+
+        <div class="main">
+            <p>
+                <b>MPM (Módszeres Projekt Menedzsment):</b> A projektmenedzsment olyan módszere, amely a projektek tervezését, szervezését, irányítását és ellenőrzését segíti. Az MPM célja, hogy a projekteket hatékonyan és időben lehessen lezárni, a meghatározott erőforrások és korlátozások figyelembevételével.
+            </p>
+            <ul>
+                <li>
+                    <b>VK (Vége-Kezdet Kapcsolat):</b> Egy tevékenység csak akkor kezdődhet, ha egy másik tevékenység befejeződött. Ez a leggyakoribb kapcsolat a hálótervezésben.
+                </li>
+                <li>
+                    <b>KK (Kezdet-Kezdet Kapcsolat):</b> Egy tevékenység csak akkor kezdődhet, ha egy másik tevékenység elkezdődött. Például, ha egy tevékenységnek csak az elejére van szükség egy másik tevékenység elindításához.
+                </li>
+                <li>
+                    <b>VV (Vége-Vége Kapcsolat):</b> Egy tevékenység csak akkor fejeződhet be, ha egy másik tevékenység is befejeződött. Ez akkor használatos, ha két tevékenységnek egyidejűleg kell befejeződnie.
+                </li>
+            </ul>
+            <div class="tlm">
+                <h2>TLM (Tevékenység Legkorábbi Megkezdése)</h2>
+                <p>
+                    A <b>TLM</b> azt az időpontot jelenti, amikor egy tevékenység legkorábban megkezdhető, figyelembe véve az előző tevékenységek befejezési idejét és a kapcsolódó korlátozásokat. A TLM kiszámítása alapvető fontosságú a hálótervezésben, mivel segít optimalizálni a projektek időzítését és erőforrás-allokációját.
+                </p>
+            </div>
+        </div>
+
+        <footer>
+            <span>2025.03.03, Debrecen</span>
+            <span>Ördög Bálint</span>
+        </footer>
+    </div>
+</body>
+</html>
